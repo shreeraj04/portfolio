@@ -31,14 +31,3 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach(section => observer.observe(section));
-
-// Marquee Pause on Hover
-const marquees = document.querySelectorAll('.marquee-content');
-marquees.forEach(marquee => {
-  marquee.addEventListener('mouseenter', () => {
-    marquee.style.animationPlayState = 'paused';
-  });
-  marquee.addEventListener('mouseleave', () => {
-    marquee.style.animationPlayState = 'running';
-  });
-});
