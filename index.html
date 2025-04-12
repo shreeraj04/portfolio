@@ -1,90 +1,181 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfolio of Shreeraj Bhat, Associate Technical Lead with expertise in GenAI, cloud, and full-stack development."/>
   <title>Shreeraj Bhat | Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
   <header>
-    <h1>Shreeraj Bhat</h1>
-    <p>Associate Technical Lead | R&D | GenAI | Cloud | Full-Stack</p>
+    <h1 class="typewriter">Shreeraj Bhat</h1>
+    <p class="subtitle">Associate Technical Lead | R&D | GenAI | Cloud | Full-Stack</p>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#achievements">Achievements</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><button id="toggle-theme">🌓</button></li>
+        <li><button id="toggle-theme" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button></li>
       </ul>
     </nav>
   </header>
 
-  <section id="about">
+  <section id="about" class="fade-in">
     <h2>About Me</h2>
-    <p>Experienced software developer with 7.5+ years in application development, GenAI, system design, and cloud technologies. Passionate about R&D and building scalable, impactful solutions.</p>
+    <p>With over 7.5 years of experience in application development, GenAI, system design, and cloud technologies, I’m passionate about driving innovation through R&D. I’ve led projects in speech-to-text, face authentication, and scalable cloud solutions, always aiming for engineering excellence. Fluent in English, Kannada, Hindi, and Tulu, I bring a global perspective, having traveled to Singapore, Thailand, and Indonesia.</p>
   </section>
 
-  <section id="skills">
+  <section id="education" class="fade-in">
+    <h2>Education</h2>
+    <div class="education-item">
+      <h3>B.E. in Computer Science</h3>
+      <p>Shri Madhwa Vadiraja Institute of Technology & Management, Udupi (VTU)</p>
+      <span>2013 – 2017</span>
+    </div>
+  </section>
+
+  <section id="skills" class="fade-in">
     <h2>Skills</h2>
-    <ul>
-      <li>Python, Node.js, C#, JavaScript</li>
-      <li>FastAPI, Flask, Docker, AWS, GCP</li>
-      <li>Speech-to-Text, LLMs, OCR, Face Recognition</li>
-      <li>PostgreSQL, DynamoDB, Terraform</li>
-    </ul>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Programming Languages</h3>
+        <div class="marquee">
+          <div class="marquee-content">
+            <span>Python</span>
+            <span>C#</span>
+            <span>JavaScript</span>
+            <span>Node.js</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Frameworks & Tools</h3>
+        <div class="marquee">
+          <div class="marquee-content">
+            <span>FastAPI</span>
+            <span>Flask</span>
+            <span>Docker</span>
+            <span>Sentry</span>
+            <span>Grafana</span>
+            <span>Terraform</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Cloud & Databases</h3>
+        <div class="marquee">
+          <div class="marquee-content">
+            <span>AWS</span>
+            <span>GCP</span>
+            <span>DynamoDB</span>
+            <span>PostgreSQL</span>
+            <span>Redis</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>AI & Specialized</h3>
+        <div class="marquee">
+          <div class="marquee-content">
+            <span>Speech-to-Text</span>
+            <span>LLMs</span>
+            <span>OCR</span>
+            <span>Face Recognition</span>
+            <span>YOLO</span>
+            <span>RASA</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="fade-in">
     <h2>Projects</h2>
-    <div class="project">
+    <div class="project-card">
       <h3>Hubble</h3>
-      <p>Manuscript correction tool with modular AWS architecture.</p>
+      <p>Manuscript correction tool with AWS architecture. Reduced processing time by 60% via Mathpix integration.</p>
+      <span class="project-tech">Python, AWS</span>
     </div>
-    <div class="project">
+    <div class="project-card">
       <h3>Integrity Checks</h3>
-      <p>Document validation with LLM support and bulk uploads.</p>
+      <p>Document validation with LLM support, handling thousands of requests and bulk uploads.</p>
+      <span class="project-tech">Python, AWS, Terraform</span>
     </div>
-    <div class="project">
+    <div class="project-card">
       <h3>Generative AI Copilot</h3>
-      <p>Summarization, title generation, and more for research papers.</p>
+      <p>Research assistant for Paperpal with title generation and summarization features.</p>
+      <span class="project-tech">Python, GenAI, AWS</span>
+    </div>
+    <div class="project-card">
+      <h3>eKYC Solution</h3>
+      <p>Proof-of-concept for banks with OCR for Aadhaar cards and face authentication.</p>
+      <span class="project-tech">Python, JavaScript</span>
+    </div>
+    <div class="project-card">
+      <h3>Conversational AI Bot</h3>
+      <p>RASA-based bot for automated text and voice conversations with real-time training.</p>
+      <span class="project-tech">Python, RASA</span>
     </div>
   </section>
 
-  <section id="experience">
+  <section id="experience" class="fade-in">
     <h2>Experience</h2>
     <div class="timeline">
       <div class="timeline-item">
         <h3>Tetherfi</h3>
         <span>Associate Technical Lead (2024–Present)</span>
-        <p>Worked on speech-to-text, YOLO, Whisper, and LLM wrappers for edge devices.</p>
+        <p>Developed speech-to-text solutions with Whisper for edge devices and led “Tetherfi Innovate” hackathon.</p>
       </div>
       <div class="timeline-item">
         <h3>Cactus Communications</h3>
         <span>Senior Software Engineer (2022–2024)</span>
-        <p>Developed scalable cloud solutions, integrated GPT/LLMs, and led major projects.</p>
+        <p>Led AWS-based solutions like Hubble and Integrity Checks, integrating LLMs and mentoring juniors.</p>
       </div>
       <div class="timeline-item">
         <h3>Tetherfi</h3>
         <span>Senior Software Engineer & Earlier Roles (2017–2022)</span>
-        <p>Led R&D efforts in face auth, OCR, eKYC, and conversational AI solutions.</p>
+        <p>Pioneered eKYC and face authentication solutions, handling 300–400 requests/second.</p>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="achievements" class="fade-in">
+    <h2>Achievements</h2>
+    <ul class="achievement-list">
+      <li>Participated in National Smart India Hackathon 2017, representing my college.</li>
+      <li>Received “Always On” award at Tetherfi (2019) for proactive task completion.</li>
+      <li>Won “Best Project” and “Best Team” awards at Cactus Communications.</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="fade-in">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:shreerajbhat@gmail.com">shreerajbhat@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/shreeraj-bhat-62703268/">shreeraj-bhat</a></p>
-    <p>GitHub: <a href="https://github.com/shreeraj04">shreeraj04</a></p>
+    <div class="contact-links">
+      <a href="mailto:shreerajbhat@gmail.com" class="contact-btn" title="Email">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+      <a href="https://wa.me/+917204260320" target="_blank" class="contact-btn" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://www.linkedin.com/in/shreeraj-bhat-62703268/" target="_blank" class="contact-btn" title="LinkedIn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/shreeraj04" target="_blank" class="contact-btn" title="GitHub">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
     <a href="Shreeraj_Bhat_Resume.pdf" download class="btn">Download Resume</a>
   </section>
 
   <footer>
-    <p>&copy; 2025 Shreeraj Bhat</p>
+    <p>© 2025 Shreeraj Bhat</p>
   </footer>
 
   <script src="script.js"></script>
