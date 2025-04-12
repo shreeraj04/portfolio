@@ -212,7 +212,7 @@ body.light .skill-item {
 }
 
 .skill-item:not(:last-child)::after {
-  content: ',';
+  /* content: ','; */
   margin-left: 0.3rem;
   color: var(--text-dark);
 }
