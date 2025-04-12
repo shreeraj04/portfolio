@@ -48,3 +48,17 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach(section => observer.observe(section));
+
+// Visitor Counter
+const visitorCountElement = document.getElementById('visitor-count');
+if (visitorCountElement) {
+  fetch('https://api.countapi.xyz/hit/shreeraj04.github.io/portfolio')
+    .then(response => response.json())
+    .then(data => {
+      visitorCountElement.textContent = data.value;
+    })
+    .catch(error => {
+      console.error('Error fetching visitor count:', error);
+      visitorCountElement.textContent = 'N/A';
+    });
+}
